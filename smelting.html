@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Wiki – The Ultimate Resource for Minecraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("./img/background.webp");
+            background-position: center;
+        }
+        
+        .dropdown-menu li a:hover {
+            background-color: #443355;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="navbar-collapse collapse" id="menu">
+                <a href="./index.html" class="navbar-brand"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e6/Site-logo.png/revision/latest?cb=20211226202153" alt="" width="60" height="60"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#wikidropdown" data-bs-toggle="dropdown">Wiki</a>
+                        <ul class="dropdown-menu bg-dark" id="wikidropdown" style="margin-top: 20px;">
+                            <li><a href="./community_portal.html" class="dropdown-item text-white">Community Portal</a></li>
+                            <li><a href="./projects.html" class="dropdown-item text-white">Projects</a></li>
+                            <li><a href="./discord.html" class="dropdown-item text-white">Discord</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#gamesdropdown" data-bs-toggle="dropdown">Games</a>
+                        <ul class="dropdown-menu bg-dark" id="gamesdropdown" style="margin-top: 20px;">
+                            <li><a href="./minecraft.html" class="dropdown-item text-white">Minecraft</a></li>
+                            <li><a href="./minecraft_dungeons.html" class="dropdown-item text-white">Minecraft Dungeons</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#usefultipsdrodown" data-bs-toggle="dropdown">Useful Tips</a>
+                        <ul class="dropdown-menu bg-dark" id="usefultipsdropdown" style="margin-top: 20px;">
+                            <li><a href="./resource_packs.html" class="dropdown-item text-white">Resource Packs</a></li>
+                            <li><a href="./enchanting.html" class="dropdown-item text-white">Enchanting</a></li>
+                            <li><a href="./crafting.html" class="dropdown-item text-white">Crafting</a></li>
+                            <li><a href="./smelting.html" class="dropdown-item text-white">Smelting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#gamepediadropdown" data-bs-toggle="dropdown">Gamepedia</a>
+                        <ul class="dropdown-menu bg-dark" id="gamepediadropdown" style="margin-top: 20px;">
+                            <li><a href="https://gamepedia.zendesk.com/" class="dropdown-item text-white">Gamepedia Support</a></li>
+                            <li><a href="https://community.fandom.com/wiki/Help%3ABad_advertisements" class="dropdown-item text-white">Report A Bad Ad</a></li>
+                            <li><a href="https://help.fandom.com/wiki/" class="dropdown-item text-white">Help Wiki</a></li>
+                            <li><a href="https://help.fandom.com/wiki/How_to_contact_Gamepedia" class="dropdown-item text-white">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="register" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark p-4" style="border-radius: 26px;">
+                <div>
+                    <h1 class="modal-header text-success">Register</h1>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="username" class="form-control bg-dark text-white" placeholder="username:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">username: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="email" class="form-control bg-dark text-white" placeholder="email:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">email: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" class="form-control bg-dark text-white" placeholder="password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">password: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="confirm_password" class="form-control bg-dark text-white" placeholder="confirm password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">confirm password: </label>
+                            </div>
+                            <br />
+                            <select id="country" name="country" class="form-select bg-dark text-white" style="border-radius: 26px; height: 60px;">
+                                <option>select country</option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo</option>
+                                <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote D'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">Curacao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and Mcdonald Islands</option>
+                                <option value="VA">Holy See (Vatican City State)</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran, Islamic Republic of</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libyan Arab Jamahiriya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao</option>
+                                <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia, Federated States of</option>
+                                <option value="MD">Moldova, Republic of</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territory, Occupied</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russian Federation</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthelemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="CS">Serbia and Montenegro</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syrian Arab Republic</option>
+                                <option value="TW">Taiwan, Province of China</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania, United Republic of</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UM">United States Minor Outlying Islands</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Viet Nam</option>
+                                <option value="VG">Virgin Islands, British</option>
+                                <option value="VI">Virgin Islands, U.s.</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                            <br />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Register</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="login" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark p-4" style="border-radius: 26px;">
+                <div>
+                    <h1 class="modal-header text-success">Login</h1>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="username" class="form-control bg-dark text-white" placeholder="username:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">username: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" class="form-control bg-dark text-white" placeholder="password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">password: </label>
+                            </div>
+                            <br />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Login</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container mb-5">
+            <div class="carousel slide" data-bs-ride="carousel" style="margin-top: 130px;" id="header-slide">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#header-slide" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#header-slide" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#header-slide" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slide_1.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>a publicly accessible and editable wiki for information on the Minecraft franchise.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide_2.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>This wiki and its many pages and files for all Minecraft-related games are managed and maintained by 697 active users from the Minecraft community.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide_3.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>Anyone can contribute!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container text-white" style="margin-bottom: 60px;">
+        <div class="bg-dark p-5" style="margin-top: 60px;">
+            <h1 class="text-center">Smelting</h1>
+            <p style="text-align: justify;">
+                Smelting is a method of obtaining refined goods from raw materials by heating in a furnace, blast furnace, or smoker. For example, raw iron can be smelted to produce iron ingots using coal as fuel. Like crafting, smelting uses recipes to determine what item is produced, but its recipes are simpler. Smelting also yields experience.
+            </p>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Usage and mechanics</h3>
+            </div>
+            <p style="text-align: justify;">
+                The furnace, blast furnace, and smoker share a similar interface: At the upper left is a slot for smeltable item input, below that is a slot for fuel input, and on the right is a slot where output items accumulate and can be removed by the player. Flames above the fuel slot act as a gauge showing the gradual consumption of the current fuel item, and an arrow in the middle gradually fills to show the progress of smelting the current input item.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                To smelt, an input item and fuel must be placed into the input and fuel slots, respectively. The furnace then begins to smelt and will continue even after the player closes the interface. (The player can still tell when a furnace is working by its block texture showing flames and fire particle effects appearing.)
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The furnace burns one fuel item at a time, with the fuel gauge indicating how much of that item's burn time remains. As each fuel item is fully consumed, another one is taken from the fuel slot and the gauge starts over.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Smeltable input items are also processed one at a time, but are not removed from the input slot while smelting is in progress. The arrow indicates how much of the smelting process has completed. When the arrow is full, the input item is removed from the input stack and an output item is added to the output stack. Smelting of the next input item then begins immediately.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Smelting stops under any of four conditions:
+            </p>
+            <br>
+            <div class="ms-3" style="text-align: justify;">
+                <ul>
+                    <li>When the furnace runs out of smeltable items: That is, the input slot becomes empty.</li>
+                    <li>The furnace runs out of fuel: The fuel input slot is empty and the current fuel item is fully consumed (that is, the fuel gauge becomes empty).</li>
+                    <li>The output slot becomes full: Either the slot has a full stack of the output, or the output contains the wrong output item for the current input item. (For example, if the output contains iron ingots but the input contains raw gold.) In this case, smelting (but not fuel consumption) is paused until the output slot becomes available (usually because items were removed by either a player or a hopper). If a fuel item burns out in this condition, a new one will not be used until the output slot is again available.</li>
+                    <li>The furnace is broken: This will drop the contents of all the slots, any accumulated experience, and the furnace itself. The currently-burning fuel item will be lost, since it is removed from the fuel slot before burning begins. The furnace item may not be dropped if it was destroyed by an explosion.</li>
+                </ul>
+            </div>
+            <p style="text-align: justify;">
+                If smelting stops while a fuel item is still burning (a normal occurrence), the furnace will continue to run visually but no more input items will be processed. If the fuel is exhausted (and the fuel gauge is empty) when an item is partly smelted, the smelting progress is undone at double speed and the item remains in the input stack.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Smelting is suspended if players move far enough away from the furnace (including going to another dimension) that simulation stops in the chunk the furnace is in. It will resume when a player returns.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                If the player sleeps in a bed while a furnace is smelting items, the furnace's progress remains the same as if the bed had not been used and no additional time had passed. This is because when a player sleeps in a bed, no time actually passes; the game simply sets the time of day to morning.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The furnace keeps track of experience for each item as smelting is completed for it, accumulating it in a hidden counter. It remembers the total earned experience even if a hopper is used to remove the items from the output slot. This earned experience is awarded to the next player who uses the interface to remove items manually, after which the counter is reset. (If the player takes some of the output but leaves some in the slot, the experience corresponding to those items is retained by the furnace and not awarded to the player.)
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Recipes</h3>
+            </div>
+            <h5>Foods</h5>
+            <p style="text-align: justify;">
+                All food recipes can be used in a furnace or smoker. Food can alternatively be cooked on a campfire, which doesn't require any fuel and is faster (when cooking 4 at a time) than a furnace, but this doesn't award any experience and is slower than a smoker.
+            </p>
+            <br>
+            <h5>Ores</h5>
+            <p style="text-align: justify;">
+                All ore recipes can be used in a furnace or blast furnace.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The following additional ores can be smelted, but it's more efficient to mine them with an appropriate pickaxe. Mining them saves fuel and in most cases yields more product and experience, especially if the pickaxe has a Fortune enchantment. Smelting them, though, allows obtaining them from an automatic device. The ore blocks themselves can be obtained only via the Silk Touch enchantment.
+            </p>
+            <br>
+            <h5>Gear</h5>
+            <p style="text-align: justify;">
+                These recipes can be used in a furnace or blast furnace to recycle unneeded gear (tools, weapons, and armor).
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                For fractional experience values, first multiply this value by the number of smelted items removed from the furnace, then award the player the whole-number part, and if there is a fractional part remaining, this represents the chance of an additional experience point.
+            </p>
+            <br>
+            <div class="ms-3" style="text-align: justify;">
+                <ul>
+                    <li>For example, when smelting 1 coal ore and removing the coal, the value is 0.1, so every ten coal you remove grants you one experience point on average.</li>
+                    <li>When smelting 5 sea pickles and removing all 5 lime dye, the value is 0.2 × 5 = 1, so this grants only 1 point.</li>
+                    <li>The fractional experience stays within the furnace when the final total is not an integer, so the leftover experience is attributed to the next round of smelting.</li>
+                </ul>
+            </div>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Fuel</h3>
+            </div>
+            <p style="text-align: justify;">
+                There are multiple fuels that can be used to smelt items. The type of fuel that should be used depends on the number of items in question.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                For larger jobs, a single lava bucket or a block of coal can smelt more items than can fit in the furnace—both input and output are limited to a stack of 64, but a block of coal smelts 80 items, and lava can smelt 100 items.
+            </p>
+            <br>
+            <div class="ms-3" style="text-align: justify;">
+                <ol>
+                    <li> All times given are for fuel burned in a furnace. When burned in a blast furnace or smoker, fuel is burned twice as fast but produces the same number of items.</li>
+                    <li>Items in red are not stackable, items in yellow only stack up to 16.</li>
+                    <li>Calculated as the burning time divided by the number of logs used to make one fuel. Items in red are not made entirely of wood.</li>
+                    <li>When using planks to smelt logs to charcoal. However, value is instead 69 7⁄37 (~69.19) if using charcoal to smelt logs, assuming a plank or something of equal value is used to make the initial charcoal (640 seconds / 9.25 logs). In Bedrock Edition, if a wooden slab is used to make the first charcoal, then the value is 70 10⁄73 (~70.14) (640 / 9.125). If non-wood fuel is used to make the initial charcoal, the value is instead 71 1⁄9 (~71.11) (640 / 9). If charcoal is continually used to make more charcoal, then regardless of the initial fuel source, the average value approaches approach 71 1⁄9 (~71.11) as more is made.</li>
+                    <li>Scaffolding burns for an abnormally long time due to a bug; see MCPE-42949.</li>
+                    <li>Wooden slabs have the same burn time as planks due to a bug; see MCPE-94368.</li>
+                    <li>The ability to use nether bricks or gold or iron nuggets as fuel is due to a bug; see MCPE-114216.</li>
+                </ol>
+            </div>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Hopper automation</h3>
+            </div>
+            <p style="text-align: justify;">
+                The smelting process can be automated with hoppers on the top and bottom of the furnace. For larger smelting jobs, a third hopper on the side of the furnace can feed in fuel and, in case of lava being used as fuel, any empty buckets come out of the bottom hopper. This automatically feeds and empties the furnace so that different materials can be smelted in the same batch with no loss.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Whenever a hopper or minecart with hopper removes items from a furnace, any experience earned from cooking or smelting the removed items is saved in the furnace and awarded to the next player who manually removes an item from the furnace's output slot. This saved experience is in addition to that earned for the manually removed item(s).
+            </p>
+            <br>
+        </div>
+    </div>
+    <footer class="bg-dark container-fluid text-white">
+        <div class="row text-center">
+            <div class="col-lg p-3 p-3">
+                <h1>Fandom</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/" class="text-warning text-decoration-none">Fandom</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.dndbeyond.com/" class="text-warning text-decoration-none">D&D beyond</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.cortexrpg.com/" class="text-warning text-decoration-none">Cortex rpg</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.muthead.com/" class="text-warning text-decoration-none">Muthead</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.futhead.com/" class="text-warning text-decoration-none">Futhead</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fanatical.com/" class="text-warning text-decoration-none">Fanatical</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg p-3 p-3">
+                <h1>Overview</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/what-is-fandom" class="text-warning text-decoration-none">What is fandom ?</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/about" class="text-warning text-decoration-none">About</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/careers" class="text-warning text-decoration-none">Careers</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/press" class="text-warning text-decoration-none">Press</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/about#contact" class="text-warning text-decoration-none">Contact</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/privacy-policy" class="text-warning text-decoration-none">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg p-3 p-3">
+                <h1>Community</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://community.fandom.com/wiki/Community_Central" class="text-warning text-decoration-none">Community central</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://fandom.zendesk.com/" class="text-warning text-decoration-none">Support</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://community.fandom.com/wiki/Help:Contents" class="text-warning text-decoration-none">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

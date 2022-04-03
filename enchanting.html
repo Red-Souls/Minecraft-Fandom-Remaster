@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Wiki – The Ultimate Resource for Minecraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("./img/background.webp");
+            background-position: center;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #443355;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="navbar-collapse collapse" id="menu">
+                <a href="./index.html" class="navbar-brand"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e6/Site-logo.png/revision/latest?cb=20211226202153" alt="" width="60" height="60"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#wikidropdown" data-bs-toggle="dropdown">Wiki</a>
+                        <ul class="dropdown-menu bg-dark" id="wikidropdown" style="margin-top: 20px;">
+                            <li><a href="./community_portal.html" class="dropdown-item text-white">Community Portal</a></li>
+                            <li><a href="./projects.html" class="dropdown-item text-white">Projects</a></li>
+                            <li><a href="./discord.html" class="dropdown-item text-white">Discord</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#gamesdropdown" data-bs-toggle="dropdown">Games</a>
+                        <ul class="dropdown-menu bg-dark" id="gamesdropdown" style="margin-top: 20px;">
+                            <li><a href="./minecraft.html" class="dropdown-item text-white">Minecraft</a></li>
+                            <li><a href="./minecraft_dungeons.html" class="dropdown-item text-white">Minecraft Dungeons</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#usefultipsdrodown" data-bs-toggle="dropdown">Useful Tips</a>
+                        <ul class="dropdown-menu bg-dark" id="usefultipsdropdown" style="margin-top: 20px;">
+                            <li><a href="./resource_packs.html" class="dropdown-item text-white">Resource Packs</a></li>
+                            <li><a href="./enchanting.html" class="dropdown-item text-white">Enchanting</a></li>
+                            <li><a href="./crafting.html" class="dropdown-item text-white">Crafting</a></li>
+                            <li><a href="./smelting.html" class="dropdown-item text-white">Smelting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#gamepediadropdown" data-bs-toggle="dropdown">Gamepedia</a>
+                        <ul class="dropdown-menu bg-dark" id="gamepediadropdown" style="margin-top: 20px;">
+                            <li><a href="https://gamepedia.zendesk.com/" class="dropdown-item text-white">Gamepedia Support</a></li>
+                            <li><a href="https://community.fandom.com/wiki/Help%3ABad_advertisements" class="dropdown-item text-white">Report A Bad Ad</a></li>
+                            <li><a href="https://help.fandom.com/wiki/" class="dropdown-item text-white">Help Wiki</a></li>
+                            <li><a href="https://help.fandom.com/wiki/How_to_contact_Gamepedia" class="dropdown-item text-white">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="register" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark p-4" style="border-radius: 26px;">
+                <div>
+                    <h1 class="modal-header text-success">Register</h1>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="username" class="form-control bg-dark text-white" placeholder="username:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">username: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="email" class="form-control bg-dark text-white" placeholder="email:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">email: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" class="form-control bg-dark text-white" placeholder="password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">password: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="confirm_password" class="form-control bg-dark text-white" placeholder="confirm password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">confirm password: </label>
+                            </div>
+                            <br />
+                            <select id="country" name="country" class="form-select bg-dark text-white" style="border-radius: 26px; height: 60px;">
+                                <option>select country</option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo</option>
+                                <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote D'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">Curacao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and Mcdonald Islands</option>
+                                <option value="VA">Holy See (Vatican City State)</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran, Islamic Republic of</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libyan Arab Jamahiriya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao</option>
+                                <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia, Federated States of</option>
+                                <option value="MD">Moldova, Republic of</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territory, Occupied</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russian Federation</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthelemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="CS">Serbia and Montenegro</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syrian Arab Republic</option>
+                                <option value="TW">Taiwan, Province of China</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania, United Republic of</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UM">United States Minor Outlying Islands</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Viet Nam</option>
+                                <option value="VG">Virgin Islands, British</option>
+                                <option value="VI">Virgin Islands, U.s.</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                            <br />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Register</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="login" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark p-4" style="border-radius: 26px;">
+                <div>
+                    <h1 class="modal-header text-success">Login</h1>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="username" class="form-control bg-dark text-white" placeholder="username:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">username: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" class="form-control bg-dark text-white" placeholder="password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">password: </label>
+                            </div>
+                            <br />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Login</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container mb-5">
+            <div class="carousel slide" data-bs-ride="carousel" style="margin-top: 130px;" id="header-slide">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#header-slide" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#header-slide" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#header-slide" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slide_1.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>a publicly accessible and editable wiki for information on the Minecraft franchise.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide_2.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>This wiki and its many pages and files for all Minecraft-related games are managed and maintained by 697 active users from the Minecraft community.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide_3.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>Anyone can contribute!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container text-white" style="margin-bottom: 60px;">
+        <div class="bg-dark p-5" style="margin-top: 60px;">
+            <h1 class="text-center">Enchanting</h1>
+            <div class="border p-4 mb-3">
+                <p style="text-align: justify;">
+                    "Enchant" redirects here. For the command, see Commands/enchant. For the block used to enchant, see Enchanting Table. For the command NBT tag, see Tutorials/Command NBT tags § Items. For the Minecraft Dungeons mechanic, see Minecraft Dungeons:Enchanting.
+                </p>
+            </div>
+            <p style="text-align: justify;">
+                Enchanting is a mechanic that augments armor, tools, weapons, and books with one or more of a variety of "enchantments" that improve an item's existing abilities or imbue them with additional abilities and uses. A special "glint" animation appears on items that are enchanted.
+            </p>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Enchanting equipment</h3>
+            </div>
+            <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Usage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Enchanting Table</td>
+                    <td>Used for enchanting items</td>
+                  </tr>
+                  <tr>
+                    <td>Bookshelf</td>
+                    <td>Each bookshelf (up to 15) increases the level of the enchantments given by the enchanting table</td>
+                  </tr>
+                  <tr>
+                    <td>Lapis Lazuli</td>
+                    <td>Required to power the enchanting table</td>
+                  </tr>
+                  <tr>
+                    <td>Anvil</td>
+                    <td>Used to combine enchanted items (tools, armor, weapons), add enchantments from books, or repair an enchanted item while preserving enchantments</td>
+                  </tr>
+                  <tr>
+                    <td>Grindstone</td>
+                    <td>Used to remove all non-curse enchantments on an item (returning a small amount of experience), and optionally repair an item (for no experience)</td>
+                  </tr>
+                  <tr>
+                    <td>Enchanted Book</td>
+                    <td>Can be combined with another item through an anvil to add enchantments to the item</td>
+                  </tr>
+                </tbody>
+            </table>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Enchanting methods</h3>
+            </div>
+            <p style="text-align: justify;">
+                There are four ways to enchant an item in Survival mode:
+            </p>
+            <div class="ms-3" style="text-align: justify;">
+                <ul>
+                    <li>Through an enchanting table in exchange for experience points and lapis lazuli. Only unenchanted items may be enchanted this way.</li>
+                    <li>Through an anvil, combining an enchanted book with an item.</li>
+                    <li>Through an anvil, combining two of the same item with different existing enchantments into a single item that has the enchantments of both.</li>
+                    <li>Through a librarian villager, which may enchant books respectively for emeralds instead of lapis lazuli and experience.</li>
+                </ul>
+            </div>
+            <p style="text-align: justify;">
+                A player may also obtain items already enchanted:
+            </p>
+            <div class="ms-3" style="text-align: justify;">
+                <ul>
+                    <li>Through a villager, who may trade some enchanted items for emeralds.</li>
+                    <li>Through fishing, which gives a chance of obtaining enchanted items.</li>
+                    <li>Through a zombie, drowned, husk, piglin, skeleton, stray, wither skeleton, and zombified piglin – if they have enchanted items and the player kills them, it has an 8.5% chance of them dropping each said item.</li>
+                    <li>Through finding them in end cities and other assorted treasure chests, such as shipwrecks, mineshafts, dungeons, desert temples, jungle temples, woodland mansions, ocean ruins, strongholds, ruined portals, and bastion remnants.</li>
+                    <li>Through bartering possibly receiving an enchanted book or iron boots with Soul Speed(random level).</li>
+                    <li>Through killing pillagers and vindicators in raids.‌[Bedrock Edition only]</li>
+                </ul>
+            </div>
+            <p style="text-align: justify;">
+                Server operators and players in singleplayer worlds with cheats enabled can also enchant items using commands such as /enchant. When enchanted with the /give command, the maximum enchantment level is 255‌[Java Edition only]. In Creative mode, items can be enchanted via an anvil and enchanted books, with no experience points required. Enchanted books are available in the Creative mode inventory, with individual book displays for the highest level of each enchantment and other levels available via the "Search" tab.
+            </p>    
+            <h5>Enchanting table</h5>
+            <p style="text-align: justify;">
+                An item can be enchanted by using an enchanting table and placing the item in the input slots and 1–3 Lapis Lazuli in its dedicated slot. Upon placing the item, three (pseudo)randomized options appear on the right of the GUI. The glyphs here do not affect the enchantment, but hovering over a presented enchantment shows one enchantment to be applied (on mobile devices, the player can tap an enchantment before putting in the lapis lazuli or hold the enchantment before release). The only choices available have a level requirement equal to or below the player's current level and a lapis lazuli requirement equal to or below the number of lapis lazuli placed in the table. Each option imbues the item with a randomized set of enchantments that are dependent on the number of experience levels required (e.g. a level 10 enchantment can give a pickaxe the "Efficiency II" enchantment); the actual level cost and the number of lapis lazuli required have no effect.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                Although the player must have at least the level requirement to get an enchantment, the number of levels that the player is charged is the same as the lapis lazuli requirement. For example, if the third enchantment listed is a level 30-50 enchantment, the player must have at least 30 levels, but pay only 3 levels and 3 lapis lazuli.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                The level requirement influences the quantity, type, and level of enchantments instilled in the item, with a higher experience level generally resulting in more and/or higher-level enchantments. Nevertheless, there is a significant random factor, and even a level 30 enchantment (the maximum) doesn't guarantee more than one enchantment, or even that enchantments are "maximum strength" — a level 30 enchantment can still yield Fortune II or Efficiency III alone, for example. On the other hand, it is possible for multiple different enchantments to be given from one use of the enchanting table. For example, a level 30 enchantment applied to a pickaxe may yield both efficiency lV and unbreaking lll.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                To increase the enchantment level, bookshelves can be placed next to the enchanting table while keeping one block of air between them. To gain access to the previously mentioned level 30 enchantments, a total of 15 bookshelves need to be placed around the enchanting table. See the Enchantment Mechanics page for more detailed information on this.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                Enchanting a book produces an enchanted book, which does nothing on its own, but effectively "saves" the enchantment for later application to another item with an anvil.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                Unlike with an anvil, using the enchanting table while on Creative still costs experience. However, if the player doesn't have enough experience, then experience reduces to zero and the enchantment still works, even when using the enchanting table while already at level zero.
+            </p>  
+            <br>
+            <h5>Anvil combinations</h5>
+            <p style="text-align: justify;">
+                An anvil can be used to combine the enchantments of two items, sacrificing one of them and repairing the other. The items must be compatible; they must either be the same type and material (such as two iron swords) or an item and an enchanted book with an applicable enchantment (such as a bow and an Infinity enchanted book).
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                Combining two enchanted items, books or one of each with the same enchantment at the same level produces an item or book with the next higher level of that enchantment up to the maximum allowed in survival mode; for example, a book with Thorns I and Unbreaking II combined with a book with Unbreaking II produces a book with Thorns I and Unbreaking III.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                To combine items, the player places the target item in the anvil's first slot and the sacrifice item in the second slot. If the combination is allowed, the resulting enchanted item appears in the anvil's output slot and an experience level cost, labeled "Enchantment Cost", appears below (green if the player has enough experience levels, red if they don't). To complete the enchanting, the player removes the enchanted item from the anvil's output slot, and their experience level is reduced accordingly.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                The experience cost depends on the enchantments, with highly enchanted items costing more. If the target item is also being repaired, that costs more as well. The target item can also be renamed, at additional cost. There is also an accumulating surcharge for prior work done on anvils. In Survival mode, work that costs more than 39 levels of experience is refused although it may still be possible to perform the same work in steps. For example, a damaged enchanted bow may be repaired on an anvil with an ordinary bow, and then another enchanted bow may be used to combine enchantments with the repaired bow.
+            </p>  
+            <br>
+            <h5>Enchanted books</h5>
+            <p style="text-align: justify;">
+                Enchanted books can be made by using an enchanting table to enchant a book. (They can also be found in generated chests, purchased with emeralds from a villager librarian, or looted by fishing rod.) The book can receive multiple enchantments of any type, but only enchantments appropriate to a given item type may be applied to that item. For example, the same book may receive Respiration and Power enchantments, but the Respiration enchantment is lost if the book is applied to anything but a helmet, and the Power enchantment is lost if the book is applied to anything but a bow.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                Enchanted books are used on an anvil to add enchantments to items, including other books. They can apply some enchantments to items that cannot be enchanted from an enchanting table, such as applying Thorns to boots.
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                In Creative mode, books can enchant any item with any enchantment, such as a stick having Knockback II.‌[JE only] However, mutually-exclusive enchantments, such as Infinity and Mending, cannot be applied this way or via /enchant (though are still available via /give).
+            </p>  
+            <br>
+            <p style="text-align: justify;">
+                The experience costs for using books are considerably less than for combining items with similar enchantments since the books themselves cost levels to create. However, it's still an extra cost, and enchanting items directly has a chance to get multiple enchantments. The advantage of books is that they can be stockpiled for use on an item of choice and allow for controlled combinations. For example, a Silk Touch book can be used on an axe, pickaxe, or shovel, and the player can decide which item receives which enchantment.
+            </p>  
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Disenchanting</h3>
+            </div>
+            <p style="text-align: justify;">
+                The only way to disenchant items is via the grindstone or by repairing the items via the crafting grid. Using the grindstone removes all enchantments (except Curse of Binding and Curse of Vanishing) and gives experience back based on the level of the enchantment(s) and their value.
+            </p>  
+            <br>
+        </div>
+    </div>
+    <footer class="bg-dark container-fluid text-white">
+        <div class="row text-center">
+            <div class="col-lg p-3 p-3">
+                <h1>Fandom</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/" class="text-warning text-decoration-none">Fandom</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.dndbeyond.com/" class="text-warning text-decoration-none">D&D beyond</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.cortexrpg.com/" class="text-warning text-decoration-none">Cortex rpg</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.muthead.com/" class="text-warning text-decoration-none">Muthead</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.futhead.com/" class="text-warning text-decoration-none">Futhead</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fanatical.com/" class="text-warning text-decoration-none">Fanatical</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg p-3 p-3">
+                <h1>Overview</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/what-is-fandom" class="text-warning text-decoration-none">What is fandom ?</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/about" class="text-warning text-decoration-none">About</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/careers" class="text-warning text-decoration-none">Careers</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/press" class="text-warning text-decoration-none">Press</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/about#contact" class="text-warning text-decoration-none">Contact</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/privacy-policy" class="text-warning text-decoration-none">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg p-3 p-3">
+                <h1>Community</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://community.fandom.com/wiki/Community_Central" class="text-warning text-decoration-none">Community central</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://fandom.zendesk.com/" class="text-warning text-decoration-none">Support</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://community.fandom.com/wiki/Help:Contents" class="text-warning text-decoration-none">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

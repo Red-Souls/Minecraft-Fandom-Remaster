@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Wiki – The Ultimate Resource for Minecraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("./img/background.webp");
+            background-position: center;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #443355;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="navbar-collapse collapse" id="menu">
+                <a href="./index.html" class="navbar-brand"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e6/Site-logo.png/revision/latest?cb=20211226202153" alt="" width="60" height="60"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#wikidropdown" data-bs-toggle="dropdown">Wiki</a>
+                        <ul class="dropdown-menu bg-dark" id="wikidropdown" style="margin-top: 20px;">
+                            <li><a href="./community_portal.html" class="dropdown-item text-white">Community Portal</a></li>
+                            <li><a href="./projects.html" class="dropdown-item text-white">Projects</a></li>
+                            <li><a href="./discord.html" class="dropdown-item text-white">Discord</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#gamesdropdown" data-bs-toggle="dropdown">Games</a>
+                        <ul class="dropdown-menu bg-dark" id="gamesdropdown" style="margin-top: 20px;">
+                            <li><a href="./minecraft.html" class="dropdown-item text-white">Minecraft</a></li>
+                            <li><a href="./minecraft_dungeons.html" class="dropdown-item text-white">Minecraft Dungeons</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#usefultipsdrodown" data-bs-toggle="dropdown">Useful Tips</a>
+                        <ul class="dropdown-menu bg-dark" id="usefultipsdropdown" style="margin-top: 20px;">
+                            <li><a href="./resource_packs.html" class="dropdown-item text-white">Resource Packs</a></li>
+                            <li><a href="./enchanting.html" class="dropdown-item text-white">Enchanting</a></li>
+                            <li><a href="./crafting.html" class="dropdown-item text-white">Crafting</a></li>
+                            <li><a href="./smelting.html" class="dropdown-item text-white">Smelting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#gamepediadropdown" data-bs-toggle="dropdown">Gamepedia</a>
+                        <ul class="dropdown-menu bg-dark" id="gamepediadropdown" style="margin-top: 20px;">
+                            <li><a href="https://gamepedia.zendesk.com/" class="dropdown-item text-white">Gamepedia Support</a></li>
+                            <li><a href="https://community.fandom.com/wiki/Help%3ABad_advertisements" class="dropdown-item text-white">Report A Bad Ad</a></li>
+                            <li><a href="https://help.fandom.com/wiki/" class="dropdown-item text-white">Help Wiki</a></li>
+                            <li><a href="https://help.fandom.com/wiki/How_to_contact_Gamepedia" class="dropdown-item text-white">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="register" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark p-4" style="border-radius: 26px;">
+                <div>
+                    <h1 class="modal-header text-success">Register</h1>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="username" class="form-control bg-dark text-white" placeholder="username:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">username: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="email" class="form-control bg-dark text-white" placeholder="email:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">email: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" class="form-control bg-dark text-white" placeholder="password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">password: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="confirm_password" class="form-control bg-dark text-white" placeholder="confirm password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">confirm password: </label>
+                            </div>
+                            <br />
+                            <select id="country" name="country" class="form-select bg-dark text-white" style="border-radius: 26px; height: 60px;">
+                                <option>select country</option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo</option>
+                                <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote D'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">Curacao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and Mcdonald Islands</option>
+                                <option value="VA">Holy See (Vatican City State)</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran, Islamic Republic of</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libyan Arab Jamahiriya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao</option>
+                                <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia, Federated States of</option>
+                                <option value="MD">Moldova, Republic of</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territory, Occupied</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russian Federation</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthelemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="CS">Serbia and Montenegro</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syrian Arab Republic</option>
+                                <option value="TW">Taiwan, Province of China</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania, United Republic of</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UM">United States Minor Outlying Islands</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Viet Nam</option>
+                                <option value="VG">Virgin Islands, British</option>
+                                <option value="VI">Virgin Islands, U.s.</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                            <br />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Register</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="login" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark p-4" style="border-radius: 26px;">
+                <div>
+                    <h1 class="modal-header text-success">Login</h1>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="username" class="form-control bg-dark text-white" placeholder="username:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">username: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" class="form-control bg-dark text-white" placeholder="password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">password: </label>
+                            </div>
+                            <br />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Login</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container mb-5">
+            <div class="carousel slide" data-bs-ride="carousel" style="margin-top: 130px;" id="header-slide">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#header-slide" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#header-slide" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#header-slide" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slide_1.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>a publicly accessible and editable wiki for information on the Minecraft franchise.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide_2.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>This wiki and its many pages and files for all Minecraft-related games are managed and maintained by 697 active users from the Minecraft community.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide_3.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>Anyone can contribute!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container text-white" style="margin-bottom: 60px;">
+        <div class="bg-dark p-5" style="margin-top: 60px;">
+            <h1 class="text-center">Resource Packs</h1>
+            <div class="border p-4 mb-3">
+                <p style="text-align: justify;">
+                    This article is about the current system to customize assets. For other uses, see Texture Pack
+                </p>
+            </div>
+            <p style="text-align: justify;">
+                The resource pack system provides a way for players to customize textures, models, music, sounds, languages, texts such as the end poem, splashes, credits, and fonts without any code modification.
+            </p>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Java Edition</h3>
+            </div>
+            <h5>Behavior</h5>
+            <p style="text-align: justify;">
+                Resource packs can be placed in the folder resourcepacks within the .minecraft folder. Each resource pack is either a sub-folder or a .zip file within the resourcepacks folder. Once in the folder, a resource pack can be added from the options, where resource packs can be moved between "Available resource packs" and "Selected resource packs". "Selected resource packs" also contain the default assets on the bottom, which cannot be removed.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Resource packs load their assets based on the order of the packs on the list. The bottom-most pack loads first, then each pack placed above it replaces assets of the same name with its assets.
+            </p>
+            <br>
+            <h5>Default resource packs</h5>
+            <p style="text-align: justify;">
+                A resource pack can be bundled with a world by saving it under the name resources and placing it directly in the world's folder. When playing the world, that resource pack appears as the default right above the default resource pack. A default resource pack can also be set on a server by adding a link to a .zip file download after the line resource-pack= in the server properties file. Users can still opt out of using the resource pack or choose not to download it, however.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The old (pre-1.14) textures are available in a resource pack titled "Programmer Art". These textures are not updated when the game receives new textures.
+            </p>
+            <br>
+            <h5>Language</h5>
+            <p style="text-align: justify;">
+                Resource packs can create language files of the type .json in the folder assets/<namespace>/lang. Each file either replaces information from a file of the same name in the default or a lower pack, or it creates a new language as defined by pack.mcmeta.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Each line in the .json file is in the standard json format of "identifier":"name" followed by a comma in case it is followed by another value in the next line. identifier is the name that the game looks for to determine the name for something, and as such it should not be changed. name is the name that is displayed. For example, stone in the default language file is "block.minecraft.stone":"Stone", with block.minecraft.stone being the identifier, and Stone being the displayed name. Blank lines are ignored. The file needs to be valid JSON syntax, meaning it starts with a {, has a comma after every key value pair except the last one, and ends with a }.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Language files need to add only those lines that are changed by the pack. Any names that are not in the pack are loaded from the pack below, or default if no pack changes the names.
+            </p>
+            <br>
+            <h5>Models</h5>
+            <p style="text-align: justify;">
+                Models are files in JSON format with the extension .json, which determine the shape and textures of blocks and items.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Blocks use a block state file from assets/minecraft/blockstates to determine which model is loaded for each variant from the folder assets/minecraft/models/block. Meanwhile, each item has an item model in assets/minecraft/models/item to determine its model, which either loads from a block's model, contains data for its own custom model, or uses the default "flat" or "entity" model.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Models and block states used in packs below the top one are still loaded unless overridden in the top pack, which may cause some textures and models used by the top pack to no longer be loaded.
+            </p>
+            <br>
+            <h5>Sounds</h5>
+            <p style="text-align: justify;">
+                Resource packs load additional sounds with the file type of .ogg. Each sound placed in the pack overrides the sounds from packs below, and packs also contain a file called sounds.json which is placed within assets/minecraft. Unlike most other files in resource packs, sounds.json merges sound information from packs below the top pack, rather than each sounds.json file overriding the previous completely.
+            </p>
+            <br>
+            <h5>Textures</h5>
+            <p style="text-align: justify;">
+                For block or item textures to function, they must have equal width and height (or height that is a multiple of the width if animated); otherwise it appears as a magenta and black checkerboard. For most other textures, the file is stretched to fit the required dimensions.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Most solid blocks turn any transparent area fully opaque. Some other blocks, which have "cutout" transparency (like glass) turn all pixels that are less than 10% opaque fully transparent and all other pixels completely opaque. Every other block renders textures with semi-transparency as-is. All items and any blocks or entities which are semi-transparent by default support semi-transparency.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                If a file does not exist in any resource pack, including the default, it appears as a magenta and black checkerboard texture using the colors (
+                #f800f8 and 
+                #000000).
+            </p>
+            <br>
+            <h5>Animation</h5>
+            <p style="text-align: justify;">
+                Block, item, particle, painting, item frame, and status effect icon (assets/minecraft/textures/mob_effect) textures support animation by placing each additional frame below the last. The animation is then controlled using a .mcmeta file in JSON format with the same name and .png at the end of the filename, in the same directory. For example, the .mcmeta file for stone.png would be stone.png.mcmeta.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                If the .mcmeta file does not exist in the pack and the texture does, the game assumes the texture is not animated, rather than loading a .mcmeta file from a pack below that pack. If no .mcmeta file exists for a texture with unequal dimensions, the texture appears as a purple and black checkerboard.
+            </p>
+            <br>
+            <h5>Villagers</h5>
+            <p style="text-align: justify;">
+                Textures from assets/minecraft/textures/entity/villager and assets/minecraft/textures/entity/zombie_villager support a .mcmeta file in JSON format containing additional effects to apply to the hat layer. The file is contained in the same directory as the texture, and has the same name as the texture, except appended with .mcmeta. For example, the file profession/farmer.png can have a properties file called profession/farmer.png.mcmeta
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                If the .mcmeta file does not exist in the pack and the texture does, the game loads the default settings, rather than loading a .mcmeta file from a pack below that pack.
+            </p>
+            <br>
+            <h5>Colormaps</h5>
+            <p style="text-align: justify;">
+                Colormaps are 256×256 pixel images which tell the game which color to use in each biome. They are located in assets/minecraft/textures/colormap. The game contains two colormaps, foliage.png which colors plants such as leaves (except birch and spruce) and vines, and grass.png which colors grass and grass blocks. Colormaps can be disabled on individual blocks by removing the tintindex tag from the block model.
+            </p>
+            <br>
+            <h5>Texts</h5>
+            <p style="text-align: justify;">
+                Two .txt files in UTF-8 format and one .json file exist in assets/minecraft/texts which are used by the game to determine the text to display.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The file end.txt contains the text of the end poem, using formatting codes to apply the colors to the two speakers, and with the text PLAYERNAME being replaced with the player's name. After that file is shown, the contents of credits.json are shown.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The file splashes.txt contains lines of text separated using line breaks to determine the splashes to display in-game. Any splash can be replaced with different text.
+            </p>
+            <br>
+            <h5>Fonts</h5>
+            <p style="text-align: justify;">
+                A font file is a JSON file located at assets/<namespace>/font within a resource pack and contains a list of providers that each tie a character set to a resource location along with some extra information. The default font is defined by the font minecraft:default while the default font used by enchantment tables is defined by the font minecraft:alt. The resource locations given in font providers should also include the file extensions.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Font texture sheets will automatically be resized based on the amount of characters in each array line, and some sheets may use a 16-character wide sheet, in order to conform with a Unicode block.
+            </p>
+            <br>
+            <h5>Default textures</h5>
+            <p style="text-align: justify;">
+                The texture files of the default fonts contain a grid of white characters, which are automatically colored by Minecraft as needed in-game. The character sizes are automatically determined based on the last line of pixels containing any alpha value. Due to the way fonts are detected, filling the background of a character with a color containing a 5% alpha background causes the full width to render without generally having a visible background to the character. The default font character is 8×8 pixels, while accented.png is 9×12 pixels.
+            </p>
+            <br>
+            <div class="ms-3">
+                <ul>
+                    <li>Glyphs 0x20 (space) through 0x7E (tilde) display the standard ASCII characters</li>
+                    <li>Glyphs 0x7F (<control>) through 0xFF (y with diaeresis) display the Code page 437 characters</li>
+                </ul>
+            </div>
+            <p style="text-align: justify;">
+                The default texture used when displaying the Standard Galactic Alphabet (a.k.a. the enchanting text or "alien font") is assets/minecraft/textures/font/ascii_sga.png.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                There is another currently unimplemented texture called illageralt, which is the rune-like font from Minecraft Dungeons. It is located at assets/minecraft/textures/font/asciillager.png.
+            </p>
+            <br>
+            <h5>Shadows</h5>
+            <p style="text-align: justify;">
+                In most places text is rendered, a shadow appears beneath every character. This shadow is a copy of the character's bitmap, with the brightness subtracted by 90%, and positioned 12.5% south-west of the character, relative to its spacing. Regardless of the resolution of the character's texture, the shadow is always moved by 12.5%. In the default font (assets/minecraft/textures/font/ascii.png), the shadow is equivalent to being moved 1 pixel down and right.
+            </p>
+            <br>
+            <h5>Glowing text</h5>
+            <p style="text-align: justify;">
+                Glow ink on a sign will cause a character to create eight copies of itself, similarly to the shadows, but in all eight directions. This results in the font appearing to have a thick outline.
+            </p>
+            <br>
+            <h5>Texture sheets</h5>
+            <p style="text-align: justify;">
+                Minecraft generally does not store multiple different textures on sheets and instead stores them on separate files. Two current exceptions are map icons[2] and experience orbs.[3]
+            </p>
+            <br>
+            <h5>Shaders</h5>
+            <p style="text-align: justify;">
+                Shaders are a way for resource packs to change how the game renders. They are written in OpenGL Shading Language (GLSL).
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Bedrock Edition</h3>
+            </div>
+            <h5>Behavior</h5>
+            <p style="text-align: justify;">
+                Similarly to skins, resource packs can be bought or made in Bedrock Edition. All users can download resource packs on the system itself with the .mcpack file names, if the game platform allows file importation. When these files are opened, they are automatically imported into the game without any need for file system access.
+            </p>
+            <br>
+            <h5>Default packs</h5>
+            <p style="text-align: justify;">
+                One or more resource packs can be bundled with a world in the world settings or files[more information needed]. When playing the world, that resource pack appears as the default right above the default resource pack. A default resource pack can also be set on a server by adding a putting the .mcpack in the resource_packs folder and bundling it with the world. Users can opt out of using the resource pack or choose not to download it if the texturepack-required option is disabled in the server settings or if the world has the "Require players to accept resource packs to join" option enabled.
+            </p>
+            <br>
+        </div>
+    </div>
+    <footer class="bg-dark container-fluid text-white">
+        <div class="row text-center">
+            <div class="col-lg p-3 p-3">
+                <h1>Fandom</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/" class="text-warning text-decoration-none">Fandom</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.dndbeyond.com/" class="text-warning text-decoration-none">D&D beyond</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.cortexrpg.com/" class="text-warning text-decoration-none">Cortex rpg</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.muthead.com/" class="text-warning text-decoration-none">Muthead</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.futhead.com/" class="text-warning text-decoration-none">Futhead</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fanatical.com/" class="text-warning text-decoration-none">Fanatical</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg p-3 p-3">
+                <h1>Overview</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/what-is-fandom" class="text-warning text-decoration-none">What is fandom ?</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/about" class="text-warning text-decoration-none">About</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/careers" class="text-warning text-decoration-none">Careers</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/press" class="text-warning text-decoration-none">Press</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/about#contact" class="text-warning text-decoration-none">Contact</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/privacy-policy" class="text-warning text-decoration-none">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg p-3 p-3">
+                <h1>Community</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://community.fandom.com/wiki/Community_Central" class="text-warning text-decoration-none">Community central</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://fandom.zendesk.com/" class="text-warning text-decoration-none">Support</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://community.fandom.com/wiki/Help:Contents" class="text-warning text-decoration-none">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

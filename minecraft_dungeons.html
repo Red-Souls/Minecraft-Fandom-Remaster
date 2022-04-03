@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Wiki – The Ultimate Resource for Minecraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("./img/background.webp");
+            background-position: center;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #443355;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="navbar-collapse collapse" id="menu">
+                <a href="./index.html" class="navbar-brand"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e6/Site-logo.png/revision/latest?cb=20211226202153" alt="" width="60" height="60"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#wikidropdown" data-bs-toggle="dropdown">Wiki</a>
+                        <ul class="dropdown-menu bg-dark" id="wikidropdown" style="margin-top: 20px;">
+                            <li><a href="./community_portal.html" class="dropdown-item text-white">Community Portal</a></li>
+                            <li><a href="./projects.html" class="dropdown-item text-white">Projects</a></li>
+                            <li><a href="./discord.html" class="dropdown-item text-white">Discord</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#gamesdropdown" data-bs-toggle="dropdown">Games</a>
+                        <ul class="dropdown-menu bg-dark" id="gamesdropdown" style="margin-top: 20px;">
+                            <li><a href="./minecraft.html" class="dropdown-item text-white">Minecraft</a></li>
+                            <li><a href="./minecraft_dungeons.html" class="dropdown-item text-white">Minecraft Dungeons</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#usefultipsdrodown" data-bs-toggle="dropdown">Useful Tips</a>
+                        <ul class="dropdown-menu bg-dark" id="usefultipsdropdown" style="margin-top: 20px;">
+                            <li><a href="./resource_packs.html" class="dropdown-item text-white">Resource Packs</a></li>
+                            <li><a href="./enchanting.html" class="dropdown-item text-white">Enchanting</a></li>
+                            <li><a href="./crafting.html" class="dropdown-item text-white">Crafting</a></li>
+                            <li><a href="./smelting.html" class="dropdown-item text-white">Smelting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-bs-target="#gamepediadropdown" data-bs-toggle="dropdown">Gamepedia</a>
+                        <ul class="dropdown-menu bg-dark" id="gamepediadropdown" style="margin-top: 20px;">
+                            <li><a href="https://gamepedia.zendesk.com/" class="dropdown-item text-white">Gamepedia Support</a></li>
+                            <li><a href="https://community.fandom.com/wiki/Help%3ABad_advertisements" class="dropdown-item text-white">Report A Bad Ad</a></li>
+                            <li><a href="https://help.fandom.com/wiki/" class="dropdown-item text-white">Help Wiki</a></li>
+                            <li><a href="https://help.fandom.com/wiki/How_to_contact_Gamepedia" class="dropdown-item text-white">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="register" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark p-4" style="border-radius: 26px;">
+                <div>
+                    <h1 class="modal-header text-success">Register</h1>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="username" class="form-control bg-dark text-white" placeholder="username:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">username: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="email" class="form-control bg-dark text-white" placeholder="email:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">email: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" class="form-control bg-dark text-white" placeholder="password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">password: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="confirm_password" class="form-control bg-dark text-white" placeholder="confirm password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">confirm password: </label>
+                            </div>
+                            <br />
+                            <select id="country" name="country" class="form-select bg-dark text-white" style="border-radius: 26px; height: 60px;">
+                                <option>select country</option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo</option>
+                                <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote D'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">Curacao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and Mcdonald Islands</option>
+                                <option value="VA">Holy See (Vatican City State)</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran, Islamic Republic of</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libyan Arab Jamahiriya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao</option>
+                                <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia, Federated States of</option>
+                                <option value="MD">Moldova, Republic of</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territory, Occupied</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russian Federation</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthelemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="CS">Serbia and Montenegro</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syrian Arab Republic</option>
+                                <option value="TW">Taiwan, Province of China</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania, United Republic of</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UM">United States Minor Outlying Islands</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Viet Nam</option>
+                                <option value="VG">Virgin Islands, British</option>
+                                <option value="VI">Virgin Islands, U.s.</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                            <br />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Register</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="login" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark p-4" style="border-radius: 26px;">
+                <div>
+                    <h1 class="modal-header text-success">Login</h1>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <br />
+                            <div class="form-floating">
+                                <input type="text" name="username" class="form-control bg-dark text-white" placeholder="username:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">username: </label>
+                            </div>
+                            <br />
+                            <div class="form-floating">
+                                <input type="password" class="form-control bg-dark text-white" placeholder="password:" style="border-radius: 26px;" />
+                                <label class="form-label text-white">password: </label>
+                            </div>
+                            <br />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Login</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container mb-5">
+            <div class="carousel slide" data-bs-ride="carousel" style="margin-top: 130px;" id="header-slide">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#header-slide" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#header-slide" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#header-slide" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slide_1.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>a publicly accessible and editable wiki for information on the Minecraft franchise.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide_2.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>This wiki and its many pages and files for all Minecraft-related games are managed and maintained by 697 active users from the Minecraft community.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide_3.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Minecraft Wiki</h5>
+                            <p>Anyone can contribute!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container text-white" style="margin-bottom: 60px;">
+        <div class="bg-dark p-5" style="margin-top: 60px;">
+            <h1 class="text-center">Minecraft Dungeons</h1>
+            <div class="border p-4 mb-3">
+                <p style="text-align: justify;">
+                    This article is about the action/adventure RPG. For the naturally generated structure in Minecraft, see Dungeon.
+                </p>
+                <br>
+                <p style="text-align: justify;">
+                    This article is about the game available on PC and consoles. For the arcade release, see Minecraft Dungeons: Arcade.
+                </p>
+                <br>
+                <p style="text-align: justify;">
+                    Discover an all-new action adventure game, inspired by classic dungeon crawlers!
+                </p>
+            </div>
+            <p style="text-align: justify;">
+                Minecraft Dungeons is an action-adventure role-playing video game developed by Mojang Studios, Xbox Game Studios and Double Eleven. It was released on May 26, 2020, for Windows (via minecraftdungeons.net and the Xbox app), Xbox One, Nintendo Switch, and PlayStation 4, on November 10, 2020, for the Xbox Series X|S, and on September 22, 2021, for Steam for Windows.[3] The PlayStation 4 version is playable on the PlayStation 5 via backwards compatibility.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Originally conceived as a singleplayer[17] game for the Nintendo 3DS,[18] Minecraft Dungeons takes inspiration from classic dungeon crawlers. It also features music by Peter Hont, Johan Johnson, Samuel Åberg, Eugnosis, Rostislav Trifonov, and Grant Kirkhope.
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Purchase and availability</h3>
+            </div>
+            <p style="text-align: justify;">
+                The Standard Edition of the game is available for US$19.99 (CA$25.99, €19.99, £16.74, AU$29.95, NZ$39.95).
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The Ultimate DLC Bundle released on July 28, 2021. It is available for US$19.99 (CA$25.99, €19.99, £16.74, AU$29.95, NZ$39.95) and includes all six DLCs along with content from the Hero Pass.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Minecraft Dungeons: Ultimate Edition also released on July 28, 2021. It is available for US$39.99 (CA$51.99, €39.99, £33.49, AU$59.95, NZ$63.95) and includes the base game and all contents of the Ultimate DLC Bundle. The physical version released on October 26, 2021 (released for the Nintendo Switch in Australia and New Zealand at a later date).
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The DLC packs are also available separately for US$5.99 (CA$7.69, €5.99, £4.99, AU$9.05, NZ$8.70) each.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The game is available on the following platforms:
+            </p>
+            <br>
+            <div class="ms-3" style="text-align: justify;">
+                <ul>
+                    <li>Windows
+                        <div class="ms-3">
+                            <ul>
+                                <li>minecraftdungeons.net</li>
+                                <li>Xbox app</li>
+                                <li>Steam</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Xbox One/Series X|S</li>
+                    <li>Nintendo Switch</li>
+                    <li>PlayStation 4</li>
+                </ul>
+            </div>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Gameplay</h3>
+            </div>
+            <p style="text-align: justify;">
+                The game supports up to four players and features various new weapons, items, and mobs, as well as a variety of environments to explore and an overarching quest that sees the player characters, heroes, face off against a main antagonist, called the Arch-Illager. The game has specific quests and locations, along with procedurally generated elements.[19] The player is not restricted to one class, and can pick up more armor or weapons and use them. Players can not build or mine because the game is focused on action/adventure. The game takes place both above ground and below. Players can re-play levels they have previously beaten. There is a camp "hub" that takes place in part of the tutorial mission, the Squid Coast, with shops unlockable by saving merchants. Missions are procedurally generated, and Mojang was considering using level generation seeds.[20]
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Players can choose a character from a variety of heroes provided, with additional heroes available as paid DLC. Character creator skins as well as skins purchased in regular Minecraft are not available for use in Minecraft Dungeons.
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Hero</h3>
+            </div>
+            <p style="text-align: justify;">
+                The hero is the character that the player controls in the game. When starting a game, the player can choose a cosmetic hero that they can use throughout the game. All of the heroes are purely cosmetic and do not offer special exclusive benefits.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                When selecting a hero, all loot, levels, and progress gained stays only on that hero and does not carry over into other heroes that the player plays as. If the player started a game with a hero, but changed their mind and wants to play as a different hero with different loot, they can duplicate the hero with the same loot the original hero had.
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Locations</h3>
+            </div>
+            <p style="text-align: justify;">
+                When the player starts up the game for the first time, the hero that they select begins at the Squid Coast. They then progress throughout the other locations, such as the Creeper Woods, until they reach the final mission of the base game, the Obsidian Pinnacle. Sometimes a location can generate a room that allows access to a secret location, such as the Creepy Crypt, the Lower Temple, the Soggy Cave, Arch Haven, or the Underhalls. Other missions can be accessed by proceeding through the missions normally, such as Pumpkin Pastures, Redstone Mines, the Desert Temple and Highblock Halls. Most of the locations of the main story with the Arch-Illager take place on the mainland. Other locations are available only through the DLC packs. The secret location, ???, requires heroes to collect all nine runes after defeating the Arch-Illager.
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Items</h3>
+            </div>
+            <p style="text-align: justify;">
+                Weapons are tools that can be used to damage entities with either melee or ranged attacks. They can be enchanted to increase their effectiveness.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Armor is used to protect the hero from damage and provide additional health. It can be enchanted to increase its effectiveness as well as provide miscellaneous uses to the hero, like a burning aura through the burning enchantment or a chilling aura that slows mobs through the chilling enchantment, both of which doesn't necessarily boost protection, but provide more utility to the hero.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Artifacts are objects that the hero can use to gain a significant power-up, damage foes, heal allies, etc. They behave like spells which provide an effect and are on a cooldown timer. The effectiveness of artifacts can be augmented through certain armor enchantments.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Consumables are non-equipable items that randomly drop during gameplay to restore health, ammo and provide temporary positive Status effects to the hero as well as deal massive splash damage to foes.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Cosmetics include capes and pets that provide no functional benefit to the hero and are designed for cosmetics and looks. Capes can either be obtained by players who own the Hero Pass, are free or were obtained by completing a set amount of Seasonal Trials. Pet cosmetics are either free, require the player to purchase DLC to be equipped, or by completing a set amount of Seasonal Trials.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Heroes can gift weapons, armor and artifacts to heroes made by other players by interacting with the gift wrapper.
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Enchantments</h3>
+            </div>
+            <p style="text-align: justify;">
+                Weapons and armor collected throughout the game possess randomly selected enchantments that, once activated by spending enchantment points obtained by levelling up, augment and alter the properties of the equipment. Equipment can appear with up to three enchantment slots each possessing a maximum of three enchantments to select from of which one can be activated. Enchantments are specific to the equipment type they appear on; ranged weapons enchantments never appear on armor, for instance.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Enchantments can enhance damage output, increase defense, apply positive or negative Status Effects, restore or increase health and speed, spawn consumables, emeralds, bees, escape death, and more.
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Mobs</h3>
+            </div>
+            <p style="text-align: justify;">
+                Mobs (short for "mobiles") are creatures encountered throughout the game. Most in Minecraft Dungeons are hostile and attempt to destroy the hero on sight, some are passive and never attack, and few are neutral that attack only if the hero attacks it first. Mobs summoned by the hero are friendly, cannot be directly damaged by the hero, and attack hostile mobs.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                There are four broad types of hostile mobs that the heroes fight in the game: mobs, enchanted mobs, powerful mobs, and bosses.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Defeating mobs gives the hero experience and they often drop emeralds, consumables, weapons, and armor.
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Throughout the game, mobs ambush the hero and a rising gate blocks further progression until all mobs that spawned in the ambush are defeated. The Arch-Illager can be seen initiating most of the ambushes on the Mainland.
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Synopsis</h3>
+            </div>
+            <p style="text-align: justify;">
+                Minecraft Dungeons is set in the same universe as Minecraft.[3] Unlike Minecraft, which is a sandbox, the game features a linear, story-driven campaign, and cinematics. The opening cinematic tells the story of an outcast Illager named Archie, who was rejected by all those who he met. One day, he stumbled upon a powerful artifact known as the "Orb of Dominance," which granted him great powers but also began to influence his decision making. The power-hungry "Arch-Illager" then sought vengeance on all those who wronged him, and soon subjugated the world with his new army, raiding villages, forcing villagers to work as slave labor, and leaving only chaos behind. It's now up to the hero to stand up against the Arch-Illager's tyranny in order to defeat him and save the world.[21]
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                The hero explores various locations in their quest to stop the Arch-Illager, fighting his army and completing quests in order to pass on to the next mission. Ultimately, they face the Arch-Illager in his castle, defeating him and shattering the Orb of Dominance in the process, which frees Archie from its influence. Afterward, they show kindness to Archie, much to his surprise, and together they celebrate that evil has been defeated and the world saved, though the Orb is later shown to be rebuilding itself.
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Development</h3>
+            </div>
+            <p style="text-align: justify;">
+                The game was announced at MINECON Earth 2018.[19] It appears as a visually enhanced version of the base Minecraft game, but has a different gameplay style.[22] The game is inspired by classic dungeon crawlers[3] and, according to Marc Watson, was originally "made up of the remnants of the Scrolls team".[17] On September 17, 2019, Double Eleven announced that they are assisting Mojang Studios and Xbox Game Studios with development, particularly with multiplayer and the console versions.[23]
+            </p>
+            <br>
+            <p style="text-align: justify;">
+                Minecraft Dungeons was given an April 2020 release date in November 2019,[24] though this date was delayed to May 26, 2020, due to the outbreak of COVID-19.[25] The closed beta for the game ran from March 25 to April 24, 2020.[26][27]
+            </p>
+            <br>
+            <div style="background-color: #04AA6D;" class="text-center">
+                <h3>Supported languages</h3>
+            </div>
+            <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Languages</th>
+                    <th scope="col">Interface</th>
+                    <th scope="col">Full Audio</th>
+                    <th scope="col">Subtitles</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>English (United States)</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>English (United Kingdom)</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>French</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>German</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Japanese</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Russian</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="bg-dark container-fluid text-white">
+        <div class="row text-center">
+            <div class="col-lg p-3 p-3">
+                <h1>Fandom</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/" class="text-warning text-decoration-none">Fandom</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.dndbeyond.com/" class="text-warning text-decoration-none">D&D beyond</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.cortexrpg.com/" class="text-warning text-decoration-none">Cortex rpg</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.muthead.com/" class="text-warning text-decoration-none">Muthead</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.futhead.com/" class="text-warning text-decoration-none">Futhead</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fanatical.com/" class="text-warning text-decoration-none">Fanatical</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg p-3 p-3">
+                <h1>Overview</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/what-is-fandom" class="text-warning text-decoration-none">What is fandom ?</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/about" class="text-warning text-decoration-none">About</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/careers" class="text-warning text-decoration-none">Careers</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/press" class="text-warning text-decoration-none">Press</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/about#contact" class="text-warning text-decoration-none">Contact</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://www.fandom.com/privacy-policy" class="text-warning text-decoration-none">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg p-3 p-3">
+                <h1>Community</h1>
+                <div>
+                    <div class="my-3">
+                        <a href="https://community.fandom.com/wiki/Community_Central" class="text-warning text-decoration-none">Community central</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://fandom.zendesk.com/" class="text-warning text-decoration-none">Support</a>
+                    </div>
+                    <div class="my-3">
+                        <a href="https://community.fandom.com/wiki/Help:Contents" class="text-warning text-decoration-none">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
